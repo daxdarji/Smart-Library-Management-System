@@ -1,0 +1,309 @@
+/* RESET */
+/* REGISTRATION FORM (OLD CLEAN STYLE) */
+
+.form-box{
+width:350px;
+margin:80px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+.form-box h2{
+margin-bottom:20px;
+}
+
+/* INPUT */
+
+.form-box input{
+width:100%;
+padding:12px;
+margin:12px 0;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+/* BUTTON */
+
+.form-box button{
+width:100%;
+padding:12px;
+background:#2a5298;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.form-box button:hover{
+background:#1e3c72;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:#1e3c72;
+}
+
+.logo{
+color:white;
+font-size:22px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+padding:6px 10px;
+border-radius:5px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+background:white;
+color:#1e3c72;
+}
+
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(135deg,#89f7fe,#66a6ff);
+}
+
+.hero h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+
+/* SECTION TITLE */
+
+.section-title{
+text-align:center;
+margin:40px 0;
+}
+
+
+/* BOOK GRID */
+
+.book-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+
+/* BOOK CARD */
+
+.book-card{
+position:relative;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:0.3s;
+}
+
+/* IMAGE FIX */
+
+.book-card img{
+width:100%;
+height:220px;
+object-fit:contain;
+background:#f4f4f4;
+padding:10px;
+}
+
+/* OVERLAY */
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+opacity:0;
+transition:0.3s;
+padding:10px;
+}
+
+/* HOVER */
+
+.book-card:hover{
+transform:translateY(-5px);
+}
+
+.book-card:hover .overlay{
+opacity:1;
+}
+
+
+/* CATEGORY */
+
+.category-title{
+margin:30px 50px 10px;
+font-size:22px;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:20px 50px;
+}
+
+/* CATEGORY CARD */
+
+.category-card{
+text-decoration:none;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+color:#333;
+}
+
+/* IMAGE FIX */
+
+.category-card img{
+width:100%;
+height:180px;
+object-fit:contain;
+background:#f4f4f4;
+padding:10px;
+}
+
+/* HOVER */
+
+.category-card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.category-card:hover img{
+transform:scale(1.05);
+}
+
+
+/* ISSUE PAGE */
+
+.issue-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.issue-form{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:300px;
+}
+
+input, select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#1e3c72;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#163060;
+}
+
+
+/* RULES */
+
+.rules-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:300px;
+}
+
+
+/* CONTACT */
+
+.contact-section{
+background:#1e3c72;
+color:white;
+padding:40px;
+text-align:center;
+margin-top:50px;
+}
+
+.contact-box{
+background:white;
+color:#333;
+display:inline-block;
+padding:20px;
+border-radius:10px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.category-grid,
+.book-grid{
+padding:20px;
+}
+
+}
